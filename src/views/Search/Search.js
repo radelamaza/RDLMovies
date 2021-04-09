@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import { Page, SearchBar } from 'components';
-import { Header, Results } from './components';
+import {  Results } from './Members';
 import { getEpisodes} from 'utils/get';
 import { Button } from '@material-ui/core';
 
@@ -15,36 +15,21 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Temporada = props => {
+const Search = props => {
   const { match, history } = props;
   const classes = useStyles();
-  const { tv, numero } = match.params;
+  const { name} = match.params;
   const [booleano, setBooleano] = useState(false);
   const [episodes, setEpisodes] = useState([]);
-  async function fetchData() {
-    
-    const [episodes] = await Promise.all([getEpisodes(tv, numero)])
-    
-    setEpisodes(episodes.res)
-    console.log(episodes)
-    return episodes
-  }
+  
   const handleVolverAtras = () => {
     window.history.back()
   }
-  
-  React.useEffect(() => {
-    
-    if (!booleano){
-      fetchData()}
-      setBooleano(true)
-  }, []);
-  
   const handleSearch = () => {};
   return (
     <Page
       className={classes.root}
-      title={"Temporada"}
+      title={"Search"}
     >
       <Button
             color="primary"
@@ -57,17 +42,16 @@ const Temporada = props => {
       {episodes && (
         <Results
           className={classes.results}
-          episodes={episodes}
-          title={tv}
-          numero={numero}
+          name={name}
+          numero={0}
         />
       )}
     </Page>
   );
 };
-Temporada.propTypes = {
+Search.propTypes = {
   history: PropTypes.object.isRequired,
   match: PropTypes.object.isRequired
 };
 
-export default Temporada;
+export default Search;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import axios from 'utils/axios';
-import { Grid } from '@material-ui/core';
+import { Grid , Button} from '@material-ui/core';
 import { Page, SearchBar } from 'components';
 import { Header, Results } from './components';
 
@@ -44,19 +44,16 @@ const CustomerManagementList = props => {
     };
   }, []);
 
-  const handleFilter = () => {};
-  const handleSearch = () => {};
+  const handleVolverAtras = () => {
+    window.history.back()
+  }
 
   return (
     <Page
       className={classes.root}
-      title="Customer Management List"
+      title="Home"
     >
-      <Header />
-      <SearchBar
-        onFilter={handleFilter}
-        onSearch={handleSearch}
-      />
+      
       <Grid
       {...rest}
       className={clsx(classes.root, className)}

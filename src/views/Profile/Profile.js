@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Page, SearchBar } from 'components';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
-import { Tabs, Tab, Divider, colors, Grid,CircularProgress } from '@material-ui/core';
+import { Tabs, Tab, Button, colors, Grid,CircularProgress } from '@material-ui/core';
 import { Header, PersonajeInfo, Appearance, Quotes } from './components';
 
 import { getPersonaje, getQuotes } from 'utils/get';
@@ -76,7 +76,9 @@ const Profile = props => {
   }, []);
 
 
-
+  const handleVolverAtras = () => {
+    window.history.back()
+  }
   
 
  
@@ -91,9 +93,14 @@ const Profile = props => {
       
       title="Profile"
     >
-      <SearchBar
-        onSearch={handleSearch}
-      />
+      <Button
+            color="primary"
+            variant="contained"
+            onClick={handleVolverAtras}
+          >
+            Volver Atrás
+          </Button> 
+      
       { usuario && (
       <Header personaje={usuario}/>)}
       <Grid

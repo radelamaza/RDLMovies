@@ -42,7 +42,7 @@ const UserProfileInfo = (props) => {
 
     return (
         <Card {...rest} className={clsx(classes.root, className)}>
-            <CardHeader title='Información Personal' />
+            <CardHeader title='Información Del Episodio' />
             <Divider />
             <CardContent className={classes.content}>
                 <Table>

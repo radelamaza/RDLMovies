@@ -59,6 +59,11 @@ const routes = [
         exact: true,
         component: lazy(() => import('views/Profile'))
       },
+      {
+        path: '/busqueda/:name',
+        exact: true,
+        component: lazy(() => import('views/Search'))
+      },
       
       {
         component: () => <Redirect to="/errors/error-404" />

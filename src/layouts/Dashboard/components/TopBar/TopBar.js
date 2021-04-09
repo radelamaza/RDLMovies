@@ -5,6 +5,8 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { makeStyles } from '@material-ui/styles';
+import { SearchBar } from 'components';
+import { Redirect } from 'react-router-dom';
 import {
   AppBar,
   Badge,
@@ -30,7 +32,6 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import axios from 'utils/axios';
 import useRouter from 'utils/useRouter';
-import { PricingModal, NotificationsPopover } from 'components';
 import { logout } from 'actions';
 
 const useStyles = makeStyles(theme => ({
@@ -43,11 +44,14 @@ const useStyles = makeStyles(theme => ({
     }
   },
   flexGrow: {
-    flexGrow: 1
+    flexGrow: 1,
+    
   },
   search: {
     backgroundColor: 'rgba(255,255,255, 0.1)',
     borderRadius: 4,
+
+    justifyContent: 'flex-end',
     flexBasis: 300,
     height: 36,
     padding: theme.spacing(0, 2),
@@ -59,6 +63,8 @@ const useStyles = makeStyles(theme => ({
     color: 'inherit'
   },
   searchInput: {
+
+    justifyContent: 'flex-end',
     flexGrow: 1,
     color: 'inherit',
     '& input::placeholder': {
@@ -94,7 +100,10 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: colors.orange[600]
   },
   logoutButton: {
-    marginLeft: theme.spacing(1)
+    marginLeft: theme.spacing(1),
+    justifyContent: 'flex-end',
+    flexDirection: 'row'
+
   },
   logoutIcon: {
     marginRight: theme.spacing(1)
@@ -116,7 +125,13 @@ const TopBar = props => {
   const [openNotifications, setOpenNotifications] = useState(false);
 
   
-
+  
+  const handleSearch = () => {
+    window.location.replace(`/busqueda/${searchValue.replace(' ','+')}/`)
+  };
+  const handleChange = (event) => {
+    setSearchValue(event.target.value);
+};
 
   return (
     <AppBar
@@ -134,8 +149,16 @@ const TopBar = props => {
         </RouterLink>
         <div className={classes.flexGrow} />
         
+      <Hidden smDown>
+      <SearchBar
+        variant="contained"
+        onSearch={handleSearch}
+        onChange={handleChange}
+      />
+          </Hidden>
         
       </Toolbar>
+      
       
       
     </AppBar>

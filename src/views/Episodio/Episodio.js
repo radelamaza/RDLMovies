@@ -42,17 +42,22 @@ const Episodio = props => {
       setBooleano(true)
   }, []);
   
-  const handleSearch = () => {};
+  const handleVolverAtras = () => {
+    window.history.back()
+  }
   return (
     <Page
       className={classes.root}
       title={'Prueba'}
     >
-      <Header />
+      <Button
+            color="primary"
+            variant="contained"
+            onClick={handleVolverAtras}
+          >
+            Volver Atrás
+          </Button> 
        
-      <SearchBar
-        onSearch={handleSearch}
-      />
       <Grid
       {...rest}
       className={clsx(classes.root, className)}
