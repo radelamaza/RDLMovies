@@ -7,7 +7,7 @@ import DashboardLayout from './layouts/Dashboard';
 
 const routes = [
   {
-    path: '/RDLMovies',
+    path: '/',
     exact: true,
     component: () => <Redirect to="/home" />
   },
@@ -66,7 +66,7 @@ const routes = [
       },
       
       {
-        component: () => <Redirect to="/errors/error-404" />
+        component: () => <Redirect to="/home" />
       }
     ]
   }

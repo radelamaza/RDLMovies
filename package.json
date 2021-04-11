@@ -1,8 +1,8 @@
 {
   "name": "rdlmovies",
-  "homepage": "https://radelamaza.github.io/RDLMovies/",
-  "author": "DeviasIO",
-  "email": "contact@devias.io",
+  "homepage": "https://radelamaza.github.io/RDLMovies/home",
+  "author": "Richi",
+  "email": "radelamaza@uc.cl",
   "licence": "UNLICENSED",
   "version": "1.2.0",
   "private": true,
