@@ -7,7 +7,7 @@ import DashboardLayout from './layouts/Dashboard';
 
 const routes = [
   {
-    path: '/',
+    path: '/RDLMovies',
     exact: true,
     component: () => <Redirect to="/home" />
   },
