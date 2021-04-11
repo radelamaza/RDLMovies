@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e79ede415b869cdda2990792d3d64b3",
+    "revision": "ade0d8922be0abb2ad365564016aff53",
     "url": "/RDLMovies/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RDLMovies/static/css/3.8beb1efa.chunk.css"
   },
   {
-    "revision": "74004b2e1c764888dc20",
+    "revision": "22f8fb4503bc865fca4b",
     "url": "/RDLMovies/static/css/main.8cfbc9c3.chunk.css"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RDLMovies/static/js/9.ce50031f.chunk.js"
   },
   {
-    "revision": "74004b2e1c764888dc20",
-    "url": "/RDLMovies/static/js/main.f6c51ada.chunk.js"
+    "revision": "22f8fb4503bc865fca4b",
+    "url": "/RDLMovies/static/js/main.d1e1c1df.chunk.js"
   },
   {
     "revision": "69df3d47287098fd6f2c",
