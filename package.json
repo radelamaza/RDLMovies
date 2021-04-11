@@ -1,5 +1,6 @@
 {
-  "name": "devias-material-kit-pro",
+  "name": "rdlmovies",
+  "homepage": "https://radelamaza.github.io/RDLMovies/",
   "author": "DeviasIO",
   "email": "contact@devias.io",
   "licence": "UNLICENSED",
@@ -7,6 +8,8 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
