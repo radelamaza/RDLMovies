@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     exact: true,
-    component: () => <Redirect to="/home" />
+    component: () => <Redirect to="/RDLMovies/home" />
   },
   {
     path: '/errors',
@@ -40,33 +40,33 @@ const routes = [
     component: DashboardLayout,
     routes: [
       {
-        path: '/home',
+        path: '/RDLMovies/home',
         exact: true,
         component: lazy(() => import('views/CustomerManagementList'))
       },
       {
-        path: '/temporada/:tv/:numero',
+        path: '/RDLMovies/temporada/:tv/:numero',
         exact: true,
         component: lazy(() => import('views/Temporada'))
       },
       {
-        path: '/episodio/:id',
+        path: '/RDLMovies/episodio/:id',
         exact: true,
         component: lazy(() => import('views/Episodio'))
       },
       {
-        path: '/personaje/:name',
+        path: '/RDLMovies/personaje/:name',
         exact: true,
         component: lazy(() => import('views/Profile'))
       },
       {
-        path: '/busqueda/:name',
+        path: '/RDLMovies/busqueda/:name',
         exact: true,
         component: lazy(() => import('views/Search'))
       },
       
       {
-        component: () => <Redirect to="/home" />
+        component: () => <Redirect to="/RDLMovies/home" />
       }
     ]
   }

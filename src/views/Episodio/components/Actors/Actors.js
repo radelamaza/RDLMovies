@@ -62,7 +62,7 @@ const Actors = props => {
               <Link
                               color="inherit"
                               component={RouterLink}
-                              to={"/personaje/"+actor.replace(" ","+")+"/"}
+                              to={"/RDLMovies/personaje/"+actor.replace(" ","+")+"/"}
                               variant="h6"
                             >
                             

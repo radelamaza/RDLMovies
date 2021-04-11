@@ -100,7 +100,7 @@ const Results = props => {
                             <Link
                               color="inherit"
                               component={RouterLink}
-                              to={"/temporada/"+season.tv+"/"+season.numero+"/"}
+                              to={"/RDLMovies/temporada/"+season.tv+"/"+season.numero+"/"}
                               variant="h6"
                             >
                               {season.name}

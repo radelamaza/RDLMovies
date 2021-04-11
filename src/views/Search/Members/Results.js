@@ -135,7 +135,7 @@ const Results = props => {
                             <Link
                               color="inherit"
                               component={RouterLink}
-                              to={"/personaje/"+customer.name.replace(" ","+")+"/"}
+                              to={"/RDLMovies/personaje/"+customer.name.replace(" ","+")+"/"}
                               variant="h6"
                             >
                               {customer.name}

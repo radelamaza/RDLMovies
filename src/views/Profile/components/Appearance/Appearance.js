@@ -62,7 +62,7 @@ const Appearance = props => {
               <Link
                               color="inherit"
                               component={RouterLink}
-                              to={"/temporada/"+title.replace(" ","+")+"/"+app+"/"}
+                              to={"/RDLMovies/temporada/"+title.replace(" ","+")+"/"+app+"/"}
                               variant="h6"
                             >
                             

@@ -127,7 +127,7 @@ const TopBar = props => {
   
   
   const handleSearch = () => {
-    window.location.replace(`/busqueda/${searchValue.replace(' ','+')}/`)
+    window.location.replace(`/RDLMovies/busqueda/${searchValue.replace(' ','+')}/`)
   };
   const handleChange = (event) => {
     setSearchValue(event.target.value);
@@ -143,7 +143,7 @@ const TopBar = props => {
         <RouterLink to="/">
           <img className={classes.movieIcon}
             alt="Logo"
-            src="/images/logos/movielogo1.png"
+            src="https://github.com/radelamaza/RDLMovies/blob/master/public/movielogo1.png?raw=true"
             
           />
         </RouterLink>
