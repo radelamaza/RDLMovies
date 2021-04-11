@@ -1,0 +1,43 @@
+{
+  "files": {
+    "static/js/0.06abb9ed.chunk.js": "/RDLMovies/static/js/0.06abb9ed.chunk.js",
+    "static/js/0.06abb9ed.chunk.js.map": "/RDLMovies/static/js/0.06abb9ed.chunk.js.map",
+    "main.css": "/RDLMovies/static/css/main.8cfbc9c3.chunk.css",
+    "main.js": "/RDLMovies/static/js/main.f6c51ada.chunk.js",
+    "main.js.map": "/RDLMovies/static/js/main.f6c51ada.chunk.js.map",
+    "runtime-main.js": "/RDLMovies/static/js/runtime-main.09fb44d6.js",
+    "runtime-main.js.map": "/RDLMovies/static/js/runtime-main.09fb44d6.js.map",
+    "static/css/3.8beb1efa.chunk.css": "/RDLMovies/static/css/3.8beb1efa.chunk.css",
+    "static/js/3.7126be44.chunk.js": "/RDLMovies/static/js/3.7126be44.chunk.js",
+    "static/js/3.7126be44.chunk.js.map": "/RDLMovies/static/js/3.7126be44.chunk.js.map",
+    "static/js/4.c6b7ff3e.chunk.js": "/RDLMovies/static/js/4.c6b7ff3e.chunk.js",
+    "static/js/4.c6b7ff3e.chunk.js.map": "/RDLMovies/static/js/4.c6b7ff3e.chunk.js.map",
+    "static/js/5.bcf07a86.chunk.js": "/RDLMovies/static/js/5.bcf07a86.chunk.js",
+    "static/js/5.bcf07a86.chunk.js.map": "/RDLMovies/static/js/5.bcf07a86.chunk.js.map",
+    "static/js/6.649a0485.chunk.js": "/RDLMovies/static/js/6.649a0485.chunk.js",
+    "static/js/6.649a0485.chunk.js.map": "/RDLMovies/static/js/6.649a0485.chunk.js.map",
+    "static/js/7.b0b60e9a.chunk.js": "/RDLMovies/static/js/7.b0b60e9a.chunk.js",
+    "static/js/7.b0b60e9a.chunk.js.map": "/RDLMovies/static/js/7.b0b60e9a.chunk.js.map",
+    "static/js/8.bfae8211.chunk.js": "/RDLMovies/static/js/8.bfae8211.chunk.js",
+    "static/js/8.bfae8211.chunk.js.map": "/RDLMovies/static/js/8.bfae8211.chunk.js.map",
+    "static/js/9.ce50031f.chunk.js": "/RDLMovies/static/js/9.ce50031f.chunk.js",
+    "static/js/9.ce50031f.chunk.js.map": "/RDLMovies/static/js/9.ce50031f.chunk.js.map",
+    "static/js/10.b1340f7b.chunk.js": "/RDLMovies/static/js/10.b1340f7b.chunk.js",
+    "static/js/10.b1340f7b.chunk.js.map": "/RDLMovies/static/js/10.b1340f7b.chunk.js.map",
+    "static/js/11.575809c4.chunk.js": "/RDLMovies/static/js/11.575809c4.chunk.js",
+    "static/js/11.575809c4.chunk.js.map": "/RDLMovies/static/js/11.575809c4.chunk.js.map",
+    "index.html": "/RDLMovies/index.html",
+    "precache-manifest.df22f2b21db1b714c9dff0f7be39cbbf.js": "/RDLMovies/precache-manifest.df22f2b21db1b714c9dff0f7be39cbbf.js",
+    "service-worker.js": "/RDLMovies/service-worker.js",
+    "static/css/3.8beb1efa.chunk.css.map": "/RDLMovies/static/css/3.8beb1efa.chunk.css.map",
+    "static/css/main.8cfbc9c3.chunk.css.map": "/RDLMovies/static/css/main.8cfbc9c3.chunk.css.map",
+    "static/js/3.7126be44.chunk.js.LICENSE.txt": "/RDLMovies/static/js/3.7126be44.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09fb44d6.js",
+    "static/css/3.8beb1efa.chunk.css",
+    "static/js/3.7126be44.chunk.js",
+    "static/css/main.8cfbc9c3.chunk.css",
+    "static/js/main.f6c51ada.chunk.js"
+  ]
+}
