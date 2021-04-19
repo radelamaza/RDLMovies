@@ -28,6 +28,18 @@ mock.onGet('/api/management/seasonsBCS').reply(200, {
       name: 'Temporada 4',
       numero: 4,
       tv: 'Better+Call+Saul'
+    },
+    {
+      id: uuid(),
+      name: 'Temporada 5',
+      numero: 5,
+      tv: 'Better+Call+Saul'
+    },
+    {
+      id: uuid(),
+      name: 'Temporada 6',
+      numero: 6,
+      tv: 'Better+Call+Saul'
     }
   ]
 });
